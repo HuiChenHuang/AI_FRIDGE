@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<title>Generic Page - Industrious by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">食在，想不到</a>
+				<nav>
+					<a href="#menu">我的菜單 Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="/" method="post">我的食譜 MY RECIPE</a></li>
+					<li><a href="/table" method="post">我的冰箱 MY RECIPE</a></li>
+					<li><a href="/survey">註冊 REGISTER</a></li>
+					<li><a href="/feedback">回饋調查 FEEDBACK</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>立即註冊</h1>
+			</div>
+		<form method="post" action={{url_for('sucess')}}>
+			<table cellspacing="1" cellpadding="2" wideth="760" border="0" class="a2" align="center">
+				<tbody>
+					<tr height="25">
+						<td class="a1" align="middle" colspa="2">
+								<!--content-->
+							<form action="/done" method='post'>
+							<input name="user_ID" type="hidden" value="{{ ID }}">
+							<h1>您已成功提交會員資料！謝謝!</h1>
+							<p><button type='submit'><a href ="/">回首頁</a><font color="#FF9900">HOME</font></button></p>
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>

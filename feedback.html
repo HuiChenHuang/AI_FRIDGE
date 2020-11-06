@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<title>Elements - Industrious by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">食在，想不到</a>
+				<nav>
+					<a href="#menu">我的菜單 Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="/" method="post">我的食譜 MY RECIPE</a></li>
+					<li><a href="/table" method="post">我的冰箱 MY RECIPE</a></li>
+					<li><a href="/survey">註冊 REGISTER</a></li>
+					<li><a href="/feedback">回饋調查 FEEDBACK</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>顧客回饋意見 Feedback</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+
+									<!--content-->
+								<form method='post' action={{ url_for('feedback') }}> >
+								<input name="user_ID" type="hidden" value="{{ ID }}">
+									<h2><font color="#0000CC">顧客回饋意見 Feedback</font></h2>
+									<td><label>9. 是否滿意此產品的服務? <font color="#FF9900">Do you satisfy our recommendation and service?</font></td></label><br>
+											<input type="radio" id="satisfication1" name="radio" value="Excellent">
+											<label for="satisfication1">非常滿意 <font color="#FF9900">Excellent</font></label>
+											<input type="radio" id="satisfication2" name="radio" value="Satisfied">
+											<label for="satisfication2">滿意 <font color="#FF9900">Satisfied</font></label>
+											<input type="radio" id="satisfication3" name="radio" value="Natural">
+											<label for="satisfication3">尚可 <font color="#FF9900">Natural</font></label>
+											<input type="radio" id="satisfication4" name="radio" value="Excellent">
+											<label for="satisfication4">不滿意 <font color="#FF9900">Unsatisfied</font></label><br>
+									<label>10.其他建議 <font color="#FF9900">Any other recommendation for us? :</font></label><br>
+												<tr class="a3">
+											<td>
+											<textarea cols="5" name="add" rows="10" style="margin: 0px 398.6px 0px 0px; width: 511px; height: 181px;"></textarea>
+										</tr>
+										<tr class="a3">
+
+										</tr>
+										<br>
+										<p><button type='submit'><a href ="sucess.html">確認送出</a><font color="#FF9900">Submit</font></button></p>
+								</form>
+					</div>
+				</div>
+			</section>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>關於"食在，想不到"</h3>
+							<p>"食在，想不到" 採用網頁Web及行動裝置LineBot進行開發，提供使用者自行上傳或搜尋相關料理食材，系統也能根據購買食材清單及冰箱現有食材紀錄推薦食譜，是一套便捷的食譜交流系統。</p>
+						</section>
+						<section>
+							<h4>4 W</h4>
+							<ul class="alt">
+								<li><a href="#">WHO is "食在，想不到"'s target market ? </a></li>
+								<li><a href="#">WHEN can you used it ?</a></li>
+								<li><a href="#">WHAT is "食在，想不到" ?</a></li>
+								<li><a href="#">HOW to use "食在，想不到" ?</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>聯絡我們</h4>
+							<ul class="plain">
+								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; AI_FOOD <a href="index.html">食在，想不到 (按一下返回)</a>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
